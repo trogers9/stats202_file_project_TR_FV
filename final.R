@@ -1,8 +1,7 @@
 #SVM
-install.packages('e1071')
-install.packages('Matrix')
+install.packages('e1071', lib="./Rpackage", repos="http://cran.rstudio.com/")
 
-library(e1071)
+library(e1071, lib.loc = "./Rpackage")
 #load training
 #data<-read.csv('./Documents/Stanford/2016-2017/Summer Quarter/Stats 202/final project/training.csv')
 
